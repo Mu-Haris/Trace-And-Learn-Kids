@@ -1,0 +1,6 @@
+# app-ads.txt for kinexapps.com
+# Required by Google AdMob for app inventory verification
+# Replace pub-XXXXXXXXXXXXXXXX with your actual AdMob Publisher ID
+# Find it in AdMob console → Account → Publisher ID
+
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
