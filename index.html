@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Trace & Learn Kids — Trace Letters, Numbers & Shapes</title>
+<meta name="description" content="Fun tracing app for kids. Trace letters A-Z, numbers 0-9, and shapes. Watch & Learn videos included!"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f9f0;color:#333}
+  .hero{background:linear-gradient(135deg,#43A047,#1E88E5);padding:60px 20px;text-align:center;color:#fff}
+  .hero h1{font-size:2.6rem;font-weight:900;letter-spacing:-1px;margin-bottom:12px;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+  .hero p{font-size:1.15rem;opacity:.9;max-width:520px;margin:0 auto 32px}
+  .badge-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+  .badge-row img{height:48px;border-radius:10px}
+  .qr-box{background:#fff;border-radius:20px;padding:20px;display:inline-block;box-shadow:0 8px 32px rgba(0,0,0,.15)}
+  .qr-box p{font-size:.8rem;color:#666;margin-top:8px;font-weight:600}
+  .features{padding:60px 20px;max-width:800px;margin:0 auto;text-align:center}
+  .features h2{font-size:1.9rem;font-weight:800;margin-bottom:36px;color:#2E7D32}
+  .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+  .feat-card{background:#fff;border-radius:18px;padding:28px 18px;box-shadow:0 4px 16px rgba(0,0,0,.07)}
+  .feat-card .icon{font-size:2.4rem;margin-bottom:12px}
+  .feat-card h3{font-size:1rem;font-weight:700;margin-bottom:6px}
+  .feat-card p{font-size:.85rem;color:#777;line-height:1.5}
+  .screenshots{background:#e8f5e9;padding:50px 20px;text-align:center}
+  .screenshots h2{font-size:1.9rem;font-weight:800;margin-bottom:10px;color:#1B5E20}
+  .screenshots p{color:#555;margin-bottom:32px}
+  footer{background:#1B5E20;color:#fff;padding:36px 20px;text-align:center}
+  footer a{color:#A5D6A7;text-decoration:none;margin:0 10px}
+  footer a:hover{text-decoration:underline}
+  footer p{margin-top:12px;opacity:.6;font-size:.85rem}
+  .pill{display:inline-block;background:rgba(255,255,255,.2);border-radius:20px;padding:6px 16px;font-size:.85rem;margin:0 4px 8px}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>✏️ Trace &amp; Learn Kids</h1>
+  <p>Help your child master letters, numbers &amp; shapes through fun guided tracing, videos, and poems!</p>
+
+  <div class="badge-row">
+    <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"/>
+    </a>
+  </div>
+
+  <div class="qr-box">
+    <canvas id="qrcode"></canvas>
+    <p>Scan to download</p>
+  </div>
+
+  <br/><br/>
+  <span class="pill">📱 iPhone &amp; iPad</span>
+  <span class="pill">👶 Ages 2–7</span>
+  <span class="pill">🌍 English</span>
+  <span class="pill">⭐ Free + Premium</span>
+</div>
+
+<div class="features">
+  <h2>Everything kids need to learn</h2>
+  <div class="feat-grid">
+    <div class="feat-card">
+      <div class="icon">🔤</div>
+      <h3>Letters A–Z</h3>
+      <p>Guided stroke-by-stroke tracing for every letter of the alphabet</p>
+    </div>
+    <div class="feat-card">
+      <div class="icon">🔢</div>
+      <h3>Numbers 0–9</h3>
+      <p>Fun number tracing with counting animations and sounds</p>
+    </div>
+    <div class="feat-card">
+      <div class="icon">🔷</div>
+      <h3>Shapes</h3>
+      <p>Circle, square, triangle, star and more fun shapes to trace</p>
+    </div>
+    <div class="feat-card">
+      <div class="icon">🎬</div>
+      <h3>Watch &amp; Learn</h3>
+      <p>Short animated videos that teach each letter and number</p>
+    </div>
+    <div class="feat-card">
+      <div class="icon">📖</div>
+      <h3>Poems</h3>
+      <p>Fun rhyming poems for letters, numbers and shapes (Premium)</p>
+    </div>
+    <div class="feat-card">
+      <div class="icon">⭐</div>
+      <h3>Celebrations</h3>
+      <p>Stars, sounds, and animations reward every completed trace</p>
+    </div>
+  </div>
+</div>
+
+<div class="screenshots">
+  <h2>Built for little learners</h2>
+  <p>Designed for ages 2–7 with big buttons, bright colors, and encouraging sounds</p>
+</div>
+
+<footer>
+  <div>
+    <a href="/Trace-And-Learn-Kids/privacy-policy">Privacy Policy</a>
+    <a href="/Trace-And-Learn-Kids/support">Support</a>
+    <a href="https://kinexapps.com" target="_blank">Kinex Apps</a>
+  </div>
+  <p>© 2025 Kinex Apps. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  new QRCode(document.getElementById("qrcode"), {
+    text: "https://apps.apple.com/app/idYOUR_APP_ID",
+    width: 140, height: 140,
+    colorDark: "#1B5E20", colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+</script>
+</body>
+</html>
